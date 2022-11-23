@@ -1,4 +1,4 @@
-function Set-AllowFromVnet {
+function VnetRules {
 
 <#
 .Synopsis
@@ -13,7 +13,7 @@ function Set-AllowFromVnet {
             ## Version: 1.0
 .EXAMPLE
 
-    > Set-AllowFromVnet -Priority 100 -SOURCERG_NAME "A" -SOURCEWebApp_NAME "ABC" -TARGETRG_NAME "B" -TARGETWebAPP_NAME "ASD" -RuleName "AllowFromVnet"
+    > VnetRules -Priority 100 -SOURCERG_NAME "A" -SOURCEWebApp_NAME "ABC" -TARGETRG_NAME "B" -TARGETWebAPP_NAME "ASD" -RuleName "AllowFromVnet"
 
 .NOTES
 =================================================
