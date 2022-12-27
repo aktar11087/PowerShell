@@ -37,7 +37,7 @@ TO DO:
     $IP_ADDR = $IP_ADDR.Split(',')
     
     # Looping the IP and increasing the counter and append with /32
-    for ($i=0;$i -lt $IP_ADDR.Length; $i+4){
+    for ($i=0;$i -lt $IP_ADDR.Length; $i++){
     $IP_RANGE = $IP_ADDR[$i]+"/32"
     $Priority += 100
 
