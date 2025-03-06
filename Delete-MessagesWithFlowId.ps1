@@ -37,7 +37,7 @@ $invisibleTimeOut = [System.TimeSpan]::FromSeconds(10)
 $messageCount = 0
 
 # Loop through up to 100,000 iterations
-for ($i = 0; $i -lt 100,000; $i++) {
+for ($i = 0; $i -lt 10000; $i++) {
     try {
         # Fetch the message asynchronously
         $queueMessage = $queue.GetMessageAsync($invisibleTimeOut, $null, $null).GetAwaiter().GetResult()
