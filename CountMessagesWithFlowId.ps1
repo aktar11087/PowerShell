@@ -63,6 +63,14 @@ for ($i = 0; $i -lt 10000; $i++) {
             # Print the count of messages with the desired FlowId
             #Write-Host "Total messages with FlowId '$desiredFlowId': $messageCount"
             Write-Host "Total messages with FlowId '$desiredFlowId'- Message ID: $($queueMessage.Id) - MessageCount: $messageCount"
+            
+            Write-Host "----------------------------------------"
+            Write-Host " Message Found with FlowId: '$desiredFlowId'"
+            Write-Host "----------------------------------------"
+            Write-Host " Message ID      : $($queueMessage.Id)"
+            Write-Host " Message Count   : $messageCount"
+            Write-Host "----------------------------------------"
+
         }
     }
     catch {
@@ -70,4 +78,4 @@ for ($i = 0; $i -lt 10000; $i++) {
     }
 }
 
-Write-Host "Process completed."
+Write-Host "Process completed. Total messages processed: $messageCount"
